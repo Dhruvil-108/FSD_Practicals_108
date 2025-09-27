@@ -1,0 +1,47 @@
+/* General container */
+.calculator-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/* Calculator box */
+.calculator {
+background: #1b1f1d5e;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+width: 320px;
+}
+
+
+/* Display */
+.display {
+background: #000;
+color: #0ff;
+font-size: 2rem;
+font-weight: bold;
+text-align: right;
+padding: 15px;
+border-radius: 12px;
+margin-bottom: 20px;
+overflow-x: auto;
+}
+
+
+/* Rows */
+.row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 12px;
+}
+
+
+/* Buttons */
+button {
+flex: 1;
+margin: 5px;
+}

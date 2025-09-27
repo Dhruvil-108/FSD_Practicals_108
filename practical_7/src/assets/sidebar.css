@@ -1,0 +1,104 @@
+/* Sidebar Container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+}
+
+.sidebar-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/* Toggle Button */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  background: #ef9f2f;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: 0.3s;
+}
+.menu-btn:hover {
+  background: #ef9f2f;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #ef9f2f;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+.sidebar.open {
+  left: 0;
+}
+
+/* Logo */
+.sidebar .logo {
+  color: #ecf0f1;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Links */
+.sidebar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  transition: background 0.3s, padding-left 0.3s;
+}
+.sidebar a:hover {
+  background: #34495e;
+  padding-left: 28px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background: transparent; /* Remove card look */
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+.main-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  .main-content h1 {
+    font-size: 26px;
+  }
+}
