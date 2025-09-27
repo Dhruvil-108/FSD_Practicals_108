@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IT Form - Enter Income</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IT Form</h1>
+    <p>Please enter your income from two sources:</p>
+    <% if (error) { %>
+      <div class="error"><%= error %></div>
+    <% } %>
+    <form action="/calculate" method="POST">
+      <input type="text" name="income1" placeholder="Income Source 1" required>
+      <input type="text" name="income2" placeholder="Income Source 2" required>
+      <button type="submit">Calculate Total Income</button>
+    </form>
+  </div>
+</body>
+</html>

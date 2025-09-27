@@ -1,0 +1,66 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #65baf6, #f33d0b);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.container h1,
+.container h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input */
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Button */
+button,
+.btn {
+  background: #8EC5FC;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #E0C3FC;
+}
+
+/* Error message */
+.error {
+  background: #ffcccc;
+  color: #b30000;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
